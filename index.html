@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center pt-5">
+    <section class="border-4 w-75 shadow-lg text-center">
+        <div class="container text-center p-5">
+            <h1>Smart Login System</h1>
+            <div class="row d-flex align-items-center justify-content-center pt-3">
+                <div class="col-md-8">
+                    <div class="form-floating mb-3">
+                        <input oninput="validtionEmail()" style="background-color: #24353F;color: white;" type="email" class="form-control" id="emailInput" placeholder="Email address">
+                        <label style="color: var(--bs-info);" for="emailInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input oninput="validtionPassord()" style="background-color: #24353F;color: white;" type="password" class="form-control" id="passwordInput" placeholder="Password">
+                        <label style="color: var(--bs-info);" for="passwordInput">Password</label>
+                    </div>
+                    <p id="hide" class="text-danger pt-2 d-none">All inputs are required</p>
+                    <p id="hide2" class="text-danger pt-2 d-none">Password is not valid</p>
+
+                    <div class="pt-3">
+                        <button onclick="addEmail()" id="btnLogin" type="button" class="btn btn-outline-info w-100">Login</button>
+                    </div>
+                    <p class="text-white pt-2">Don’t have an account?<span><a class="text-white" href="index2.html">SignUp</a></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
